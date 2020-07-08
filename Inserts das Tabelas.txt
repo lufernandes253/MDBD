@@ -1,0 +1,33 @@
+
+INSERT INTO `cliente`(`nome`, `turma`, `email`, `dataNascimento`, `telefoneCel`) VALUES
+('Aline', '2c', 'aline_aquino@gmail.com', '2003-09-10', 45727548 ),
+('Eduardo', '1a', 'educapelloto@hotmail.com', '2005-03-11', 54546731 ),
+('Amanda', '3b', 'amandinha_pink12@hotmail.com', '2003-02-22', 87542196 ),
+('Agatha',  '2a', 'agatha_rosa8@gmail.com',  '2005-02-23', 54219786 ),
+('Renato',  '2b', 'bebadorenato@gmail.com', '2005-05-30', 54219786 ),
+('Brenda',  '3b', 'brenda.aquino@hotmail.com', '2002-05-31', 54641366 ),
+('Gabriel', '2c', 'caocovarde@gmail.com', '2004-06-12' , 56565644);
+
+INSERT INTO `bibliotecario`(`email`, `nome`, `telefone`, `cpf`, `dataNascimento`, `rg`, `cidade`, `rua`, `cep`, `complemento`, `bairro`, `uf`, `numero`) VALUES
+("carladedeus@gmail.com", "Carla", 45627548,  "52652125223", "2002-02-22", "123456780", "Ribeirao Pires",  "Rua Dos Ampos", "05430300", "portão branco", "NULL" , "NULL", "NULL"), 
+("eric69@hotmail.com",  "Eric",  54586731,  "32666656234", "2001-02-23", "123709456",   "São Paulo",  "Rua Parque aliança", "25562150", "NULL", "NULL" , "NULL", "NULL"), 
+("cicerohenrique@hotmail.com", "Cícero", 87442196,  "12546145987", "2001-04-14",  "654987321",  "Brás", "Rua Corpo do japé","33226652", "NULL", "NULL" , "NULL", "NULL"),   
+("edson00bo@yahoo.com", "Edson", 54299786,  "25779895123", "2003-10-29",  "357901826",   "Rio Grande" ,   "Rua Montanhas", "22102512", "NULL", "NULL" , "NULL", "NULL" );
+
+INSERT INTO `livro`( `titulo`, `autor`, `genero`, `editora`) VALUES
+('Ilíada', 'Homero', 'história', 'NULL'),
+('Odisséia', 'Homero', 'história', 'NULL'),
+('Hamlet', 'William Shakespeare', 'ficção', 'NULL'),
+('Dom Quixote','Miguel Cervantes', 'ficção', 'NULL'),
+('A toupeira', 'John Lê Carré', 'ficão', 'NULL'),
+('Os Filhos da Meia-Noite',' Salman Rushdie', 'romance', 'NULL'),
+('Os Sofrimentos do Jovem Werther', 'Johann Wolfgang von Goethe', 'drama', 'NULL');
+
+INSERT INTO `emprestimo_devolucao`( `data_emprestimo`, `data_devolucao`, `ra`, `codFuncionario`, `codlivro`) VALUES 
+('2020-03-21', '2020-02-12', 5,1,1),    
+('2020-04-12', '2020-02-07', 4,1,2), 
+('2020-03-23', '2020-02-02', 6,3,3),
+('2020-03-13', '2020-02-12', 2,2,4),   
+('2020-03-04', '2020-02-12', 1,3,5),    
+('2020-03-03', '2020-02-12', 7,1,6),                     
+('2020-03-03', '2020-02-12', 3,2,7);
